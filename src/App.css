@@ -1,0 +1,160 @@
+body {
+    margin: 12px;
+    font-family: Arial, sans-serif;
+    background-color: #f7f7f7;
+    color: #333;
+}
+
+.App {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+/* Headers */
+h1,
+h2 {
+    text-align: center;
+    color: #222;
+}
+
+h2 {
+    font-style: italic;
+    color: #666;
+}
+
+/* Forms */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+form > input[type='text'] {
+    flex-grow: 1;
+    margin-right: 10px;
+}
+
+div > form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 30px;
+}
+
+div ul {
+    padding: 10px 0;
+}
+
+/* Inputs */
+input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+input:focus {
+    outline: 2px solid #007bff;
+}
+
+input[type='text'] {
+    width: 100%;
+    max-width: 100%;
+}
+
+input[type='checkbox'] {
+    cursor: pointer;
+}
+
+input[type='checkbox']:checked + span {
+    text-decoration: line-through;
+    color: #888;
+}
+
+/* Buttons */
+button {
+    padding: 10px 15px;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    background-color: #007bff;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+button.logout {
+    margin: 20px 0;
+    background-color: #dc3545;
+}
+
+button.logout:hover {
+    background-color: #a71d2a;
+}
+
+/* To-Do List */
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background-color: #f9f9f9;
+    flex-wrap: wrap;
+}
+
+li:hover {
+    background-color: #f1f1f1;
+}
+
+/* To-Do Text and Actions */
+label {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+li .actions {
+    display: flex;
+    gap: 10px;
+}
+
+li button {
+    background-color: #6c757d;
+    margin: 5px;
+}
+
+li button:hover {
+    background-color: #5a6268;
+}
+
+/* Edit Mode Input */
+li input[type='text'] {
+    flex-grow: 1;
+    margin-right: 10px;
+}
